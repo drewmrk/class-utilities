@@ -1,5 +1,7 @@
 # class-utilities
 
+![npm](https://img.shields.io/npm/dt/class-utilities?style=flat-square) ![CircleCI](https://img.shields.io/circleci/build/github/drewmrk/class-utilities?style=flat-square)
+
 A collection of useful utilities for HTML classes
 
 The `class-utilities` package is designed to keep code DRY by simplifying actions one may perform while calling `document.getElementsByClassName()`.
