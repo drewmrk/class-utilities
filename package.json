@@ -8,6 +8,14 @@
   "author": "Drew Markel",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "html",
+    "class",
+    "front-end",
+    "classes",
+    "utilities",
+    "utility"
+  ],
   "files": [
     "lib/**/*",
     "README.md",
