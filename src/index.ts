@@ -60,6 +60,30 @@ class Utilities {
   }
 
   /**
+   * Set the `innerText` of elements
+   *
+   * @param data Data for `innerText`
+   * @param append Option to append data to `innerText`
+   * @returns Array of `innerText` data for elements
+   */
+  innerText(data?: string, append?: 'a') {
+    if (data !== undefined) {
+      this.className.forEach(i => {
+        append === 'a'
+          ? ((i as HTMLElement).innerText += data)
+          : ((i as HTMLElement).innerText = data)
+      })
+    } else {
+      const innerTextData: string[] = []
+      this.className.forEach(i => {
+        i.textContent !== null &&
+          innerTextData.push((i as HTMLElement).innerText)
+      })
+      return innerTextData
+    }
+  }
+
+  /**
    * Set the `appendChild` of elements
    *
    * @param data Data for `appendChild`

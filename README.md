@@ -26,6 +26,7 @@ Currently, `class-utilities` supports the following methods:
 length
 innerHTML
 textContent
+innerText
 appendChild
 remove
 ```
@@ -58,6 +59,14 @@ classUtilities('test').innerHTML() // Return array with current `innerHTML` data
 classUtilities('test').textContent('Replace') // Replace
 classUtilities('test').textContent('Append', 'a') // Append
 classUtilities('test').textContent() // Return array with current `textContent` data
+```
+
+### `innerText`
+
+```js
+classUtilities('test').innerText('Replace') // Replace
+classUtilities('test').innerText('Append', 'a') // Append
+classUtilities('test').innerText() // Return array with current `innerText` data
 ```
 
 ### `appendChild`
