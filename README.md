@@ -30,6 +30,7 @@ textContent
 innerText
 appendChild
 remove
+id
 ```
 
 ## Methods/Examples
@@ -85,4 +86,13 @@ classUtilities('test').appendChild(container)
 
 ```js
 classUtilities('test').remove()
+```
+
+### `id`
+
+`id` sets a unique identifier to each element by appending the given data `-#` to it. If no parameters are supplied, `id` will return an array with `id` data of the elements
+
+```js
+classUtilities('test').id('test') // test-0, test-1, test-2, etc.
+classUtilities('test').id() // Return array with current `id` data
 ```

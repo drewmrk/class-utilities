@@ -102,6 +102,26 @@ class Utilities {
       i.remove()
     })
   }
+
+  /**
+   * Set a unique id for each element
+   *
+   * @param data Data for `id`
+   * @returns Array of `id` data for elements
+   */
+  id(data?: string) {
+    if (data !== undefined) {
+      this.className.forEach((i, index) => {
+        i.id = `${data}-${index}`
+      })
+    } else {
+      const idData: string[] = []
+      this.className.forEach(i => {
+        i.id !== null && idData.push(i.id)
+      })
+      return idData
+    }
+  }
 }
 
 /**
