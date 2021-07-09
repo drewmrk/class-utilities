@@ -1,5 +1,6 @@
 # class-utilities
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/drewmrk/class-utilities)
 ![npm](https://img.shields.io/npm/dt/class-utilities?style=flat-square) ![CircleCI](https://img.shields.io/circleci/build/github/drewmrk/class-utilities?style=flat-square)
 
 A collection of useful utilities for HTML classes
