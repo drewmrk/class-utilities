@@ -2,10 +2,19 @@
  * A collection of useful utilities for HTML classes (class-utilities)
  */
 class Utilities {
-  private className: Element[]
+  private className: Element[] = []
 
   constructor(className: string) {
-    this.className = [...document.getElementsByClassName(className)]
+    if (className.includes(' ')) {
+      const classNameStrings = className.split(' ')
+      ;[...document.getElementsByClassName(classNameStrings[1])].forEach(i => {
+        i.parentElement !== null &&
+          i.parentElement.className === classNameStrings[0] &&
+          this.className.push(i)
+      })
+    } else {
+      this.className = [...document.getElementsByClassName(className)]
+    }
   }
 
   /**

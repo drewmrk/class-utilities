@@ -96,3 +96,9 @@ classUtilities('test').remove()
 classUtilities('test').id('test') // test-0, test-1, test-2, etc.
 classUtilities('test').id() // Return array with current `id` data
 ```
+
+### Chaining
+
+Chaining provides the ability to selectively iterate over elements with a parent that has a specific class.
+
+Currently, `class-utilities` only supports chaining up to one depth, e.g. `classUtilities('test test-1')` will work, but `classUtilities('test test-1 test-2')` will not.
