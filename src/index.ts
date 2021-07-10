@@ -5,6 +5,7 @@ class Utilities {
   private className: Element[] = []
 
   constructor(className: string) {
+    className = className.trim()
     if (className.includes(' ')) {
       const classNameStrings = className.split(' ')
       ;[...document.getElementsByClassName(classNameStrings[1])].forEach(i => {
